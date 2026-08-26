@@ -1,0 +1,12 @@
+streamlit
+streamlit-mic-recorder
+faster-whisper
+llama-index
+llama-index-embeddings-huggingface
+llama-index-vector-stores-chroma
+chromadb
+groq
+beautifulsoup4
+requests
+PyMuPDF
+nest_asyncio
