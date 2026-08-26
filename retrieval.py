@@ -2,9 +2,8 @@
 import os
 import nltk
 
-# Streamlit Cloud üzerinde NLTK hardlink / pathsec hatasını engellemek için
 os.environ["NLTK_DATA"] = "/tmp/nltk_data"
-nltk.download("stopwords", download_dir="/tmp/nltk_data", quiet=True)
+
 from pathlib import Path
 import chromadb
 from llama_index.core import VectorStoreIndex, Settings
