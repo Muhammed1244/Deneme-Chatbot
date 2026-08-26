@@ -1,6 +1,5 @@
 # app.py 
 # MUST BE AT THE VERY TOP
-# app.py (Replace lines 1-3 at the top)
 import nest_asyncio
 
 try:
