@@ -1,5 +1,24 @@
 # app.py 
-# MUST BE AT THE VERY TOP
+import os
+import sys
+
+# Completely redirect NLTK data directory away from site-packages
+os.environ["NLTK_DATA"] = "/tmp/nltk_data"
+
+import nltk
+nltk.download("stopwords", download_dir="/tmp/nltk_data", quiet=True)
+nltk.download("punkt", download_dir="/tmp/nltk_data", quiet=True)
+
+import nest_asyncio
+try:
+    nest_asyncio.apply()
+except Exception:
+    pass
+
+import streamlit as st
+
+
+
 import nest_asyncio
 
 try:
