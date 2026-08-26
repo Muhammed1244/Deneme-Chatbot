@@ -1,7 +1,12 @@
 # app.py 
 # MUST BE AT THE VERY TOP
+# app.py (Replace lines 1-3 at the top)
 import nest_asyncio
-nest_asyncio.apply()
+
+try:
+    nest_asyncio.apply()
+except Exception as e:
+    print(f"Skipping nest_asyncio: {e}")
 
 import streamlit as st
 from pathlib import Path
